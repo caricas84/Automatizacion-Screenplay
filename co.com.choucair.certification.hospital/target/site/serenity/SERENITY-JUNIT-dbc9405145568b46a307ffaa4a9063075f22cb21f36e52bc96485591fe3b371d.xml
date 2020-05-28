@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Manage Medical Appointment" skipped="0" tests="3" time="73.02" timestamp="2020-05-27 08:57:36"><testcase name="Register a Doctor"/><testcase name="Register a patient"/><testcase name="schedule appointment"><failure message="&#10;Expected: &quot;Datos guardados correctamente.&quot;&#10;     but: was &quot;No se pudo guardar debido a:\n*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.\n*El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.&quot;" type="java.lang.AssertionError">
+Expected: "Datos guardados correctamente."
+     but: was "No se pudo guardar debido a:\n*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.\n*El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados."</failure><system-err>
+Expected: "Datos guardados correctamente."
+     but: was "No se pudo guardar debido a:\n*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.\n*El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados."&#13;
+co.com.choucair.certification.hospital.stepdefinitions.ManageAppointment.heVerifiesThatTheMessageDataSavedCorrectlyIsDisplayed(ManageAppointment.java:73)&#13;
+✽.he verifies that the Datos guardados correctamente.(src/test/resources/features/manage.feature:36)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Manage Medical Appointment" tests="3" skipped="0" failures="1" errors="0" timestamp="2020-05-27T13:57:37" hostname="CHMEPPF0V15Q5" time="71.894">
+  <properties/>
+  <testcase name="Register a Doctor" classname="Manage Medical Appointment" time="35.112"/>
+  <testcase name="Register a patient" classname="Manage Medical Appointment" time="18.572"/>
+  <testcase name="schedule appointment" classname="Manage Medical Appointment" time="18.196">
+    <failure message="java.lang.AssertionError: &#10;Expected: &quot;Datos guardados correctamente.&quot;&#10;     but: was &quot;No se pudo guardar debido a:\n*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.\n*El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;Datos guardados correctamente.&quot;
+     but: was &quot;No se pudo guardar debido a:\n*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.\n*El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at co.com.choucair.certification.hospital.stepdefinitions.ManageAppointment.heVerifiesThatTheMessageDataSavedCorrectlyIsDisplayed(ManageAppointment.java:73)
+	at ✽.he verifies that the Datos guardados correctamente.(src/test/resources/features/manage.feature:36)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[may 27, 2020 8:57:38 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73) on port 12744
+Only local connections are allowed.
+may 27, 2020 8:57:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Register a Doctor
+----------------------------------------------------------------------------
+may 27, 2020 8:58:12 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+may 27, 2020 8:58:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Register a patient
+----------------------------------------------------------------------------
+may 27, 2020 8:58:31 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+may 27, 2020 8:58:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: schedule appointment
+--------------------------------------------------------------------------
+[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Then the answer schedule should be 'Datos guardados correctamente.'
+[Test worker] ERROR net.serenitybdd.core.Serenity - Expected: "Datos guardados correctamente." but: was "No se pudo guardar debido a:*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.*El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados."
+]]></system-err>
+</testsuite>
