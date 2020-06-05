@@ -1,7 +1,8 @@
-#Autor Carolina Castaño
+#Autor Carolina Castaño González
+
 @Regression
 Feature: Academy Choucair
-  As a user I want to learn how to automate in screemplay at the Choucair Academywith the automation course
+  As a user I want to learn how to automate in screemplay at the Choucair Academy with the automation course
 
   @CaseSuccessful
   Scenario: Search for a automation course

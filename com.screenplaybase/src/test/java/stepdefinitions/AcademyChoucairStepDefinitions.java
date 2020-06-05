@@ -22,8 +22,8 @@ public class AcademyChoucairStepDefinitions {
     }
 
     @When("^she search for the course Recursos Automatizacion Bancolombia on the Choucair Academy platform$")
-    public void sheSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(/*String course*/){
-        //OnStage.theActorInTheSpotlight().attemptsTo(Search.the(course));
+    public void sheSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(/*String course*/){/*
+        OnStage.theActorInTheSpotlight().attemptsTo(Search.the(course));*/
     }
 
     @Then("^she finds the course called resources Recursos Automatizacion Bancolombia$")
